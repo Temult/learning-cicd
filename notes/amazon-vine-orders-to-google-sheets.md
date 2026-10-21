@@ -10,8 +10,6 @@ This is a **Tampermonkey userscript (v1.6)** for the Amazon Vine Orders page. It
 4. The matching pages are Amazon.com Vine order-history pages. `Scan Now` inspects the **currently visible** order rows; `Add All` works through those rows with a delay between requests.
 5. The companion Google Apps Script backend is **not included** here. This file alone cannot create a Sheet or PDFs. Test with one order before using bulk actions.
 
-**Status:** The shared source had two paste/escaping defects that prevented it from parsing. The version below restores the `parseRows()` function boundary and normal JavaScript regular-expression escaping. It **passes a JavaScript syntax check**; it has not been end-to-end tested against Amazon or the Google Apps Script backend. Review its behavior and permissions before running it.
-
 <details>
 <summary><strong>Show full userscript (v1.6)</strong></summary>
 
